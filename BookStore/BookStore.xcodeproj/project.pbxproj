@@ -14,10 +14,10 @@
 		F73558521567B89D007D2088 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F73558511567B89D007D2088 /* main.m */; };
 		F73558561567B89D007D2088 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F73558551567B89D007D2088 /* AppDelegate.m */; };
 		F73558591567B89D007D2088 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73558571567B89D007D2088 /* MainStoryboard.storyboard */; };
-		F735585C1567B89D007D2088 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F735585B1567B89D007D2088 /* FirstViewController.m */; };
+		F735585C1567B89D007D2088 /* SearchBooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F735585B1567B89D007D2088 /* SearchBooksViewController.m */; };
 		F735585E1567B89D007D2088 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = F735585D1567B89D007D2088 /* first.png */; };
 		F73558601567B89D007D2088 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F735585F1567B89D007D2088 /* first@2x.png */; };
-		F73558631567B89D007D2088 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F73558621567B89D007D2088 /* SecondViewController.m */; };
+		F73558631567B89D007D2088 /* AddBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F73558621567B89D007D2088 /* AddBookViewController.m */; };
 		F73558651567B89D007D2088 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = F73558641567B89D007D2088 /* second.png */; };
 		F73558671567B89D007D2088 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F73558661567B89D007D2088 /* second@2x.png */; };
 		F735586F1567B89E007D2088 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F735586E1567B89E007D2088 /* SenTestingKit.framework */; };
@@ -25,6 +25,7 @@
 		F73558711567B89E007D2088 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73558471567B89D007D2088 /* Foundation.framework */; };
 		F73558791567B89E007D2088 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F73558771567B89E007D2088 /* InfoPlist.strings */; };
 		F735587C1567B89E007D2088 /* BookStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F735587B1567B89E007D2088 /* BookStoreTests.m */; };
+		F73558941567C10B007D2088 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F73558931567C10B007D2088 /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,12 +50,12 @@
 		F73558541567B89D007D2088 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F73558551567B89D007D2088 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F73558581567B89D007D2088 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		F735585A1567B89D007D2088 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		F735585B1567B89D007D2088 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		F735585A1567B89D007D2088 /* SearchBooksViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchBooksViewController.h; sourceTree = "<group>"; };
+		F735585B1567B89D007D2088 /* SearchBooksViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchBooksViewController.m; sourceTree = "<group>"; };
 		F735585D1567B89D007D2088 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		F735585F1567B89D007D2088 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		F73558611567B89D007D2088 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		F73558621567B89D007D2088 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		F73558611567B89D007D2088 /* AddBookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddBookViewController.h; sourceTree = "<group>"; };
+		F73558621567B89D007D2088 /* AddBookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddBookViewController.m; sourceTree = "<group>"; };
 		F73558641567B89D007D2088 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		F73558661567B89D007D2088 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		F735586D1567B89E007D2088 /* BookStoreTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookStoreTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +64,8 @@
 		F73558781567B89E007D2088 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F735587A1567B89E007D2088 /* BookStoreTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookStoreTests.h; sourceTree = "<group>"; };
 		F735587B1567B89E007D2088 /* BookStoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookStoreTests.m; sourceTree = "<group>"; };
+		F73558921567C10B007D2088 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		F73558931567C10B007D2088 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,12 +128,14 @@
 				F73558541567B89D007D2088 /* AppDelegate.h */,
 				F73558551567B89D007D2088 /* AppDelegate.m */,
 				F73558571567B89D007D2088 /* MainStoryboard.storyboard */,
-				F735585A1567B89D007D2088 /* FirstViewController.h */,
-				F735585B1567B89D007D2088 /* FirstViewController.m */,
+				F735585A1567B89D007D2088 /* SearchBooksViewController.h */,
+				F735585B1567B89D007D2088 /* SearchBooksViewController.m */,
 				F735585D1567B89D007D2088 /* first.png */,
 				F735585F1567B89D007D2088 /* first@2x.png */,
-				F73558611567B89D007D2088 /* SecondViewController.h */,
-				F73558621567B89D007D2088 /* SecondViewController.m */,
+				F73558611567B89D007D2088 /* AddBookViewController.h */,
+				F73558621567B89D007D2088 /* AddBookViewController.m */,
+				F73558921567C10B007D2088 /* SettingsViewController.h */,
+				F73558931567C10B007D2088 /* SettingsViewController.m */,
 				F73558641567B89D007D2088 /* second.png */,
 				F73558661567B89D007D2088 /* second@2x.png */,
 				F735584C1567B89D007D2088 /* Supporting Files */,
@@ -280,8 +285,9 @@
 			files = (
 				F73558521567B89D007D2088 /* main.m in Sources */,
 				F73558561567B89D007D2088 /* AppDelegate.m in Sources */,
-				F735585C1567B89D007D2088 /* FirstViewController.m in Sources */,
-				F73558631567B89D007D2088 /* SecondViewController.m in Sources */,
+				F735585C1567B89D007D2088 /* SearchBooksViewController.m in Sources */,
+				F73558631567B89D007D2088 /* AddBookViewController.m in Sources */,
+				F73558941567C10B007D2088 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +457,7 @@
 				F73558811567B89E007D2088 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F73558821567B89E007D2088 /* Build configuration list for PBXNativeTarget "BookStoreTests" */ = {
 			isa = XCConfigurationList;
@@ -459,6 +466,7 @@
 				F73558841567B89E007D2088 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
