@@ -26,6 +26,10 @@
 		F73558791567B89E007D2088 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F73558771567B89E007D2088 /* InfoPlist.strings */; };
 		F735587C1567B89E007D2088 /* BookStoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F735587B1567B89E007D2088 /* BookStoreTests.m */; };
 		F73558941567C10B007D2088 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F73558931567C10B007D2088 /* SettingsViewController.m */; };
+		F735589715680B3D007D2088 /* SearchResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F735589615680B3D007D2088 /* SearchResultViewController.m */; };
+		F735589E15684CDE007D2088 /* BookAttributeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F735589D15684CDE007D2088 /* BookAttributeCell.m */; };
+		F73558A01568531B007D2088 /* BookAttributeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F735589F1568531B007D2088 /* BookAttributeCell.xib */; };
+		F7EA09CB156873260086AF25 /* ServerCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = F7EA09CA156873260086AF25 /* ServerCommunicator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +70,13 @@
 		F735587B1567B89E007D2088 /* BookStoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookStoreTests.m; sourceTree = "<group>"; };
 		F73558921567C10B007D2088 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		F73558931567C10B007D2088 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		F735589515680B3D007D2088 /* SearchResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultViewController.h; sourceTree = "<group>"; };
+		F735589615680B3D007D2088 /* SearchResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultViewController.m; sourceTree = "<group>"; };
+		F735589C15684CDE007D2088 /* BookAttributeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookAttributeCell.h; sourceTree = "<group>"; };
+		F735589D15684CDE007D2088 /* BookAttributeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookAttributeCell.m; sourceTree = "<group>"; };
+		F735589F1568531B007D2088 /* BookAttributeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookAttributeCell.xib; sourceTree = "<group>"; };
+		F7EA09C9156873260086AF25 /* ServerCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerCommunicator.h; sourceTree = "<group>"; };
+		F7EA09CA156873260086AF25 /* ServerCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerCommunicator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +138,9 @@
 			children = (
 				F73558541567B89D007D2088 /* AppDelegate.h */,
 				F73558551567B89D007D2088 /* AppDelegate.m */,
+				F735589C15684CDE007D2088 /* BookAttributeCell.h */,
+				F735589D15684CDE007D2088 /* BookAttributeCell.m */,
+				F735589F1568531B007D2088 /* BookAttributeCell.xib */,
 				F73558571567B89D007D2088 /* MainStoryboard.storyboard */,
 				F735585A1567B89D007D2088 /* SearchBooksViewController.h */,
 				F735585B1567B89D007D2088 /* SearchBooksViewController.m */,
@@ -136,6 +150,10 @@
 				F73558621567B89D007D2088 /* AddBookViewController.m */,
 				F73558921567C10B007D2088 /* SettingsViewController.h */,
 				F73558931567C10B007D2088 /* SettingsViewController.m */,
+				F735589515680B3D007D2088 /* SearchResultViewController.h */,
+				F735589615680B3D007D2088 /* SearchResultViewController.m */,
+				F7EA09C9156873260086AF25 /* ServerCommunicator.h */,
+				F7EA09CA156873260086AF25 /* ServerCommunicator.m */,
 				F73558641567B89D007D2088 /* second.png */,
 				F73558661567B89D007D2088 /* second@2x.png */,
 				F735584C1567B89D007D2088 /* Supporting Files */,
@@ -249,6 +267,7 @@
 				F73558601567B89D007D2088 /* first@2x.png in Resources */,
 				F73558651567B89D007D2088 /* second.png in Resources */,
 				F73558671567B89D007D2088 /* second@2x.png in Resources */,
+				F73558A01568531B007D2088 /* BookAttributeCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +307,9 @@
 				F735585C1567B89D007D2088 /* SearchBooksViewController.m in Sources */,
 				F73558631567B89D007D2088 /* AddBookViewController.m in Sources */,
 				F73558941567C10B007D2088 /* SettingsViewController.m in Sources */,
+				F735589715680B3D007D2088 /* SearchResultViewController.m in Sources */,
+				F735589E15684CDE007D2088 /* BookAttributeCell.m in Sources */,
+				F7EA09CB156873260086AF25 /* ServerCommunicator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
