@@ -6,7 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
-        <!--Search Books View Controller - Item-->
+        <!--Search Books View Controller - Search Books-->
         <scene sceneID="3hj-zb-hRe">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tEg-uy-zEb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -43,7 +43,7 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                             <connections>
-                                                <outlet property="delegate" destination="wdq-Dm-fNu" id="hOb-Ue-vgv"/>
+                                                <outlet property="delegate" destination="wdq-Dm-fNu" id="YzR-cB-C4h"/>
                                             </connections>
                                         </textField>
                                     </subviews>
@@ -56,13 +56,13 @@
                             <outlet property="delegate" destination="wdq-Dm-fNu" id="erq-ON-Qbo"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" image="first.png" id="7SC-VS-tyl" userLabel="SearchBooksItem"/>
+                    <tabBarItem key="tabBarItem" title="Search Books" image="first.png" id="7SC-VS-tyl" userLabel="SearchBooksItem"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="811" y="-422"/>
         </scene>
-        <!--Add Book View Controller - Item-->
+        <!--Add Book View Controller - Add Book-->
         <scene sceneID="uKB-vZ-QZF">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6k5-wC-Xoq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -87,13 +87,13 @@
                             <outlet property="delegate" destination="33o-SY-lh2" id="IUz-Ng-Xi4"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" image="second.png" id="KF8-f2-3a2" userLabel="AddBookItem"/>
+                    <tabBarItem key="tabBarItem" title="Add Book" image="second.png" id="KF8-f2-3a2" userLabel="AddBookItem"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="811" y="180"/>
         </scene>
-        <!--Settings View Controller - Item-->
+        <!--Settings View Controller - Settings-->
         <scene sceneID="fmd-kL-uJE">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GBH-o3-eqj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -118,7 +118,7 @@
                             <outlet property="delegate" destination="aYm-DP-7s7" id="MQ6-gn-6IL"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" image="first.png" id="lqw-zz-8LS" userLabel="SettingsItem"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="first.png" id="lqw-zz-8LS" userLabel="SettingsItem"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
             </objects>
@@ -149,6 +149,20 @@
         <image name="first.png" width="30" height="30"/>
         <image name="second.png" width="30" height="30"/>
     </resources>
+    <classes>
+        <class className="AddBookViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddBookViewController.h"/>
+        </class>
+        <class className="SearchBooksViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SearchBooksViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="searchBooks:"/>
+            </relationships>
+        </class>
+        <class className="SettingsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

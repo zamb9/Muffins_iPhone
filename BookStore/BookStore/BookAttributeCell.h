@@ -18,6 +18,6 @@
 
 @property (nonatomic, retain) NSString *attribute;
 @property (nonatomic, retain, readonly) NSString *value;
-@property (nonatomic, retain) SearchBooksViewController *searchBookViewController;
+@property (nonatomic, assign) SearchBooksViewController *searchBookViewController;
 
 @end

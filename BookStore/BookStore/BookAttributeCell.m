@@ -25,11 +25,30 @@
     [super setSelected:selected animated:animated];
 }
 
+- (void)setAttribute:(NSString *)attribute
+{
+    mAttribute = attribute;
+    
+    [mTextField setPlaceholder:attribute];
+}
+
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
     if ([textField text]) {
         mValue = [textField text];
+        [searchBookViewController setAttribute:mAttribute toValue:mValue];
     }
 }
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    return YES;
+}
+
+- (BOOL)textFieldShouldEndEditing:(UITextField *)textField
+{
+    return YES;
+}
+
 
 @end

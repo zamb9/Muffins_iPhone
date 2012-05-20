@@ -8,6 +8,7 @@
 
 #import "SearchBooksViewController.h"
 #import "BookAttributeCell.h"
+#import "ServerCommunicator.h"
 
 @interface SearchBooksViewController ()
 
@@ -37,7 +38,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    BookAttributeCell *cell = (BookAttributeCell *)[[NSBundle mainBundle] loadNibNamed:@"BookAttributeCell" owner:self options:NULL];
+    NSString *cellIdentifier = [NSString stringWithFormat:@"BookAttributeCell"];
+    
+    BookAttributeCell *cell = (BookAttributeCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    
+    if (!cell) {
+        cell =  (BookAttributeCell *)[[[NSBundle mainBundle] loadNibNamed:cellIdentifier owner:self options:NULL] objectAtIndex:0];
+    }
     
     [cell setAttribute:[attributeIndex objectAtIndex:[indexPath row]]];
     
@@ -63,14 +70,24 @@
 }
 
 // *** Method called when search button is pressed ***
+// TODO: Make sure that an empty Dictionary returns all the resutls in the list
 
 - (IBAction)searchBooks:(id)sender
 {
-    NSArray *allAttributes = [searchParams allKeys];
-    for (NSString* cAttribute in allAttributes)
-    {
+    if (!searchParams) {
+        searchParams = [[NSMutableDictionary alloc] initWithCapacity:20];
+    }
+    
+    NSDictionary *searchResults = [ServerCommunicator searchBooksWithAttributes:searchParams];
+    
+    if (!searchResults) {
+        [[[UIAlertView alloc] initWithTitle:@"No search results" message:@"Something went wrong when trying to contact server." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil] show];
+    
+    } else {
+        // *** SHOW ANOTHER VIEW 
         
+        [[[UIAlertView alloc] initWithTitle:@"YEAY" message:@"Implement this shit and you'll be fine." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil] show];
+
     }
 }
-
 @end
