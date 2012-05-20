@@ -77,6 +77,7 @@
 		F735589F1568531B007D2088 /* BookAttributeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookAttributeCell.xib; sourceTree = "<group>"; };
 		F7EA09C9156873260086AF25 /* ServerCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerCommunicator.h; sourceTree = "<group>"; };
 		F7EA09CA156873260086AF25 /* ServerCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerCommunicator.m; sourceTree = "<group>"; };
+		F7EA09E115692C900086AF25 /* BookAttributeDelegate.h */ = {isa = PBXFileReference; path = BookAttributeDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				F73558541567B89D007D2088 /* AppDelegate.h */,
+				F7EA09E115692C900086AF25 /* BookAttributeDelegate.h */,
 				F73558551567B89D007D2088 /* AppDelegate.m */,
 				F735589C15684CDE007D2088 /* BookAttributeCell.h */,
 				F735589D15684CDE007D2088 /* BookAttributeCell.m */,

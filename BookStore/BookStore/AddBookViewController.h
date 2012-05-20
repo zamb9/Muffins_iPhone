@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BookAttributeDelegate.h"
 
-@interface AddBookViewController : UITableViewController
+@interface AddBookViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource, BookAttributeDelegate> {
+    
+    NSArray *attributeIndex;
+    NSMutableDictionary *bookAttributes;
+}
+
+- (IBAction)addBook:(id)sender;
+
 
 @end

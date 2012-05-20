@@ -7,14 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BookAttributeDelegate.h"
 
-@interface SearchBooksViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource> {
+@interface SearchBooksViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource, BookAttributeDelegate> {
     
     NSMutableDictionary *searchParams;
     NSArray *attributeIndex;
 }
 
 - (IBAction)searchBooks:(id)sender;
-- (void)setAttribute:(NSString *)attribute toValue:(NSString *)value;
 
 @end

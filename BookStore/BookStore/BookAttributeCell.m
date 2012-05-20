@@ -12,7 +12,7 @@
 
 @synthesize attribute = mAttribute;
 @synthesize value = mValue;
-@synthesize searchBookViewController;
+@synthesize delegate;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -36,7 +36,7 @@
 {
     if ([textField text]) {
         mValue = [textField text];
-        [searchBookViewController setAttribute:mAttribute toValue:mValue];
+        [delegate setAttribute:mAttribute toValue:mValue];
     }
 }
 

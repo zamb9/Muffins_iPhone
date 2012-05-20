@@ -48,7 +48,7 @@
     
     [cell setAttribute:[attributeIndex objectAtIndex:[indexPath row]]];
     
-    [cell setSearchBookViewController:self];
+    [cell setDelegate:self];
     
     return cell;
 }
