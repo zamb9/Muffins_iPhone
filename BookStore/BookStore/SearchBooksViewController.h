@@ -3,11 +3,18 @@
 //  BookStore
 //
 //  Created by Rikard Andersson on 2012-05-19.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 itBrainiacs. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface SearchBooksViewController : UIViewController
+@interface SearchBooksViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource> {
+    
+    NSMutableDictionary *searchParams;
+    NSArray *attributeIndex;
+}
+
+- (IBAction)searchBooks:(id)sender;
+- (void)setAttribute:(NSString *)attribute toValue:(NSString *)value;
 
 @end
